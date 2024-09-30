@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .boards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .board-container {
+    display: inline-block;
+    
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+    margin-top: 10px;
+    border: 2px solid black;
+
+  }
+  
+  .board div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    background-color: #99c9e1;
+  }
+  
+  .board div.ship {
+    background-color: #ffcccc;
+    border: 2px solid black;
+
+  }
+  
+  .board div.hit {
+    background-color: #ff6666;
+    
+  }
+  
+  .board div.miss {
+    background-color: #cccccc;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #player-board.board{
+    border: 2px solid black;
+  }
